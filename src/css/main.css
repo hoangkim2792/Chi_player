@@ -59,8 +59,10 @@ a {
 .container {
     background: linear-gradient(to bottom right, #33ccff 0%, #ff9966 100%);
     position: relative;
-    width: 1600px;
-    height: 1200px;
+    min-width: 1600px;
+    max-width: 9000px;
+    max-height: 9000px;
+    min-height: 1200px;
 }
 .musicbox{
     box-sizing: border-box;
@@ -107,8 +109,10 @@ a {
 
 .content.music_name {
     display: flex;
-    align-items: center;
+    margin-left: 500px;
     color: #313131;
+    height: 20px;
+    width: 100%;
 }
 
 /* content */
@@ -117,8 +121,13 @@ a {
     height: 744px;
     width: 618px;
     top: 0px;
-    margin-left: 82px;
+    margin-left: 110px;
 
+}
+.tag_name{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 
@@ -126,10 +135,11 @@ a {
 .player_img{
 
 position: absolute;
-width: 657.86px;
-height: 825.44px;
-left: 700px;
-top: -82px;
+width: 657.86px !important;
+height: 825.44px !important;
+left: 700px !important;
+top: -82px !important;
+border-radius: 0 !important;
 
 background: url(ab67616d0000b273813713582dcc508e7d5073c4-transformed_auto_x2-transformed.png);
 transform: rotate(0.17deg);
@@ -147,10 +157,13 @@ padding: 40px 0px;
 gap: 60px;
 
 position: absolute;
-width: 1440px;
-height: 157px;
+min-width: calc(100% + 4px);
+max-width: 9000px;
+min-height: 157px;
+max-height: 9000px;
 left: -2px;
 top: 743px;
+
 
 background: #FFFFFF;
 box-shadow: 0px -5px 40px rgba(30, 6, 6, 0.05);
@@ -429,3 +442,9 @@ border-radius: 12px;
     font-size: 18px;
   }
   
+
+.icon_menu{
+  font-size: 25px;
+  color: #333;
+
+}
